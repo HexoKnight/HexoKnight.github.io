@@ -1,0 +1,101 @@
+a {
+	color: blue;
+}
+ul {
+  background-color: #2196F3;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  grid-row-gap: 20px;
+  width: 100%;
+  list-style-type: none;
+  display: grid;
+  padding: 0;
+}
+li {
+	text-align: center;
+	grid-area: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.Icon{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 128px;
+}
+.GameIcon{
+  width: 100%;
+  vertical-align: bottom;
+  align-self: flex-end; 
+}
+li a {
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+embed object{
+	align-self: center;
+}
+html{
+  font-family: 'Raleway', sans-serif;
+  background-color: #2196F3;
+	font-size: 25px;
+}
+
+#right{
+  text-align: right;
+}
+
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'menu main'
+    'menu footer';
+  grid-gap: 10px;
+  align-items: center;
+  height: 100%;
+}
+.grid-container > div:not(#nobackground) {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  height: 100%;
+}
+
+.grid-container > #nobackground{
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.game {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cdcdcd; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a6a6a6; 
+}

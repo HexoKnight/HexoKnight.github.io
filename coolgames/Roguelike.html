@@ -1,0 +1,81 @@
+<html><head>
+	<title>Roguelike</title>
+		<link rel="icon" sizes="16x16" href="Icons/CG Logo-16x16.png">
+		<link rel="icon" sizes="24x24" href="Icons/CG Logo-24x24.png">
+		<link rel="icon" sizes="32x32" href="Icons/CG Logo-32x32.png">
+		<link rel="icon" sizes="48x48" href="Icons/CG Logo-48x48.png">
+		<link rel="icon" sizes="64x64" href="Icons/CG Logo-64x64.png">
+		<link rel="icon" sizes="96x96" href="Icons/CG Logo-96x96.png">
+		<link rel="icon" sizes="128x128" href="Icons/CG Logo-128x128.png">
+		<link rel="icon" sizes="256x256" href="Icons/CG Logo-256x256.png">
+	<link rel="stylesheet" href="stylesforcoolgames.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	</head>
+	<body>
+	  <div class="grid-container" style="display: grid;
+  grid-template-areas:
+    'header header'
+    'menu footer'
+    'menu footer';
+  grid-gap: 10px;
+  align-items: center;
+  height: 100%;">
+	    <h1 class="header">Roguelike<img src="Images/Roguelike.ico" width="96"></h1>
+	    <h3 id="right" class="header">(This is a fully working but still incomplete game, so if it seems a bit random don't be surprised)</h3>
+  	  <!--<object class="main" data="Images/Roguelike.ico" width="320" height="320"></object>-->
+  	  <div class="menu">
+        <h2>Update #2 - 20/07/2021</h2>
+        <a href="Roguelike ChangeLog.html"><h6>Full ChangeLog</h6></a>
+        	  <strong>Added:</strong><br>
+          	  A defense system for armour (and a UI element to show it),<br>
+              A mage hat item that is dropped by skeleton mages that wear them,<br>
+              A armour set bonus system (only full armour and mage hat currently),<br>
+              An entire tooltip system that works quite elegantly in the code :)<br>if I do say so myself (check it out with a .net decompiler, I use ILSpy)<br>
+              <br>
+      	    <strong>Changed:</strong><br>
+        	    The damage of the longsword to make it actually useful<br>
+        	    <br>
+      	    <strong>Removed:</strong><br>
+        	    Nothing<br>
+        	    <br>
+      	    <strong>Fixed:</strong><br>
+          	  Nothing<br>
+          	  <br>
+        	  <strong>To do:</strong><br>
+          	  Add more items,<br>
+          	  Add more enemies,<br>
+          	  Actually make further dungeons increase in difficulty,<br>
+              Figure out how to make sprites in under an hour (the fire crystal sprite literally took me a couple hours just because I kept looking for the right colur/shape but couldn't get it right and I just ended up going back to a previous design in the end)<br>
+        	    <br>
+        	  <strong>Known Bugs:</strong><br>
+              You can glitch into the pointy bottom-right corner wall if you hit it with<br>the top-left corner of your hitbox, but it's not that game-breaking if you do<br>
+              <br>
+            <strong>Controls:</strong><br>
+              <strong>W|A|S|D</strong> : movement<br>
+              <strong>left click</strong> : attack with your current weapon<br>
+              <strong>Z|X|C|V|B</strong> : use item 1|2|3|4|5<br>
+              <strong>Tab</strong> : open/close inventory<br>
+              <strong>mouse</strong> : select items in inventory<br>
+              <strong>Esc</strong> : open menu / cancel keybind change<br>
+              <strong>[DEBUG]</strong>:<br>
+              <strong>Space</strong> : summon insta kill weapon at mouse cursor<br>
+              <strong>-|=</strong> : zooming(not supposed to be necessary so will probably be removed eventually)<br>
+              <strong>1</strong> : show/hide fps<br>
+              <strong>2</strong> : show/hide hitboxes<br>
+              <strong>3</strong> : toggle the enemies' AI<br>
+              <strong>4</strong> : toggle noclip mode<br>
+              <strong>5</strong> : toggle smooth animation for the inventory<br>
+              <strong>6</strong> : restore player health to max<br>
+              <strong>7</strong> : toggle smooth delta (smoothens the fps, only really affects higher max fps due to instability)<br>
+              <strong>`</strong>(top-left of keyboard) : swap weapons (only way to get the long sword)<br>
+              <strong>0</strong> : toggle maximum FPS (100 <-> 1000)<br>
+              <strong>,|.</strong> : move the lowest (non-item) object left|right (not really very useful anymore)
+              <br><br><br><br>
+  	  </div>
+  	  <div class="footer" width="960">
+  	    If you are using Windows you can download the Windows version. (might work with other PC platforms, haven't tested)<br>
+  	    <a href="Downloads/Roguelike.zip" download="Roguelike.zip"><strong>Download</strong></a><br>(If Windows says that it might contain some form of virus, just run it anyway because it doesn't.)
+  	  </div>
+    </div>
+	
+</body></html>

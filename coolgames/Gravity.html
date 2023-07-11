@@ -1,0 +1,58 @@
+<html><head>
+	<title>Gravity</title>
+		<link rel="icon" sizes="16x16" href="Icons/CG Logo-16x16.png">
+		<link rel="icon" sizes="24x24" href="Icons/CG Logo-24x24.png">
+		<link rel="icon" sizes="32x32" href="Icons/CG Logo-32x32.png">
+		<link rel="icon" sizes="48x48" href="Icons/CG Logo-48x48.png">
+		<link rel="icon" sizes="64x64" href="Icons/CG Logo-64x64.png">
+		<link rel="icon" sizes="96x96" href="Icons/CG Logo-96x96.png">
+		<link rel="icon" sizes="128x128" href="Icons/CG Logo-128x128.png">
+		<link rel="icon" sizes="256x256" href="Icons/CG Logo-256x256.png">
+	  <link rel="stylesheet" href="stylesforcoolgames.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="Gravity/TemplateData/UnityProgress.js"></script>
+    <script src="Gravity/Build/UnityLoader.js"></script>
+    <script>
+      function Start() {
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Gravity/Build/WebGL.json", {onProgress: UnityProgress});
+      }
+    </script>
+	</head>
+	<body>
+	  <div class="grid-container">
+	    <h1 class="header">Gravity</h1>
+	    <h2 id="right" class="header">(This is an incomplete game, so if it seems a bit random don't be surprised)</h2>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 640px">
+      <h1 onclick="Start()"><a>Click To Play!</a></h1></div>
+      <div class="footer">
+        <a href="Gravity/index.html">Click here to see the better online version</a>
+      </div>
+    </div>
+  	  <div class="menu">
+        <h2>ChangeLog</h2>
+    	    Update:<br>
+        	  <br>
+        	  Added:<br>
+          	  Everything<br>
+              <br>
+      	    Removed:<br>
+        	    The first person camera, but I could easily add it back if i wanted to, but i'll probably add an option for that as it is much more nausiating<br>
+        	    <br>
+      	    Fixed:<br>
+          	  Nothing<br>
+          	  <br>
+        	  To do:<br>
+          	  Make the jump less powerful so that the player doesn't just fly across the map,<br>
+          	  Make the 'map' bigger or add more 'stages'<br>
+        	    <br>
+        	  Known Bugs:<br>
+          	  It is possible to get stuck in corners and the only way to get out is to spin really fast<br>
+  	  </div>
+  	  <div class="footer" width="960">
+  	    If you are using Windows you can download the Windows version.<br>
+  	    <a href="Downloads/Gravity.zip" download="Gravity.zip"><strong>Download</strong></a><br>(If Windows says that it might contain some form of virus, just run it anyway because it doesn't.)
+  	  </div>
+    </div>
+	
+</body></html>

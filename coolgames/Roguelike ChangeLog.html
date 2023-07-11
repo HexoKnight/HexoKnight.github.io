@@ -1,0 +1,152 @@
+<html>
+	<head>
+	<title>Roguelike ChangeLog</title>
+		<link rel="icon" sizes="16x16" href="Icons/CG Logo-16x16.png">
+		<link rel="icon" sizes="24x24" href="Icons/CG Logo-24x24.png">
+		<link rel="icon" sizes="32x32" href="Icons/CG Logo-32x32.png">
+		<link rel="icon" sizes="48x48" href="Icons/CG Logo-48x48.png">
+		<link rel="icon" sizes="64x64" href="Icons/CG Logo-64x64.png">
+		<link rel="icon" sizes="96x96" href="Icons/CG Logo-96x96.png">
+		<link rel="icon" sizes="128x128" href="Icons/CG Logo-128x128.png">
+		<link rel="icon" sizes="256x256" href="Icons/CG Logo-256x256.png">
+	<link rel="stylesheet" href="stylesforcoolgames.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	</head>
+	<body>
+    <div class="grid-container" style="grid-template-areas:
+    'header header header'
+    'menu main main'
+    'menu main main'
+    'menu main main';">
+	    <h1 class="header">Roguelike ChangeLog</h1>
+  	  <div class="menu" style="width: 100%">
+        <h2>ChangeLog</h2>
+        	  <br>
+        	  - <strong>Everything</strong>: -<br>
+          	- Movement, attacking, items (weapons, armour and other items), -<br>
+            - inventory (with cool animation :) ), enemies, -<br>
+            - random dungeon generation, -<br>
+            - menus (with keybind changing :D, one of my favourite QoL features in games)  -<br>
+            <br>
+            - A more efficient font system (along with a new font), -<br>
+            - Inventory labels to show what goes where, -<br>
+            - A new enemy (fireball shooting mage) (and a projectile system to go along with it), -<br>
+            - A stamina and mana system, -<br>
+            - A bar for health and smaller ones for stamina and mana, -<br>
+            - A permadeath system that completely resets the entire dungeon after you die, -<br>
+            - A portal that spawns after the 'boss' is killed, that takes you to the next dungeon -<br>
+  	  </div>
+      <div class="main" style="width: 100%">
+        <h2>To Do</h2>
+          - Add more items -<br>
+          <br>
+          - Add more enemies -<br>
+          <br>
+          - Actually make further dungeons increase in difficulty -<br>
+          <br>
+          - Figure out how to make sprites in under an hour<br>(the fire crystal sprite literally took me a couple hours just because<br>I kept looking for the right colur/shape but couldn't get it right<br>and I just ended up going back to a previous design in the end) -<br>
+      </div>
+    </div>
+	</body>
+</html>
+<!--
+  	  <div class="menu">
+        <h2>Update #0</h2>
+        <a href="Roguelike ChangeLog.html"><h6>Full ChangeLog</h6></a>
+    	    Update:<br>
+        	  <br>
+        	  Added:<br>
+          	  Everything:<br>
+          	  Movement, attacking, items (weapons, armour and other items),<br>
+              inventory (with cool animation :) ), enemies,<br>
+              random dungeon generation,<br>
+              menus (with keybind changing :D, one of my favourite QoL features in games)<br>
+              <br>
+      	    Removed:<br>
+        	    Nothing<br>
+        	    <br>
+      	    Fixed:<br>
+          	  The font class I used to render text couldn't be disposed of and stayed in memory no matter what so before it was fixed, you would only have to leave the game running for a COUPLE MINUTES for it to use AN ENTIRE GIGABYTE OF RAM, so that was crazy but i fixed it by not instantiating a new class every frame but reusing them for the same sized font<br>
+          	  <br>
+        	  To do:<br>
+          	  Actually show which slots in the inventory are for what,<br>
+          	  Add more items,<br>
+          	  Actually make it a roguelike by adding further dungeons and completely reseting when you die,<br>
+              Figure out how to make sprites in under an hour (the fire crystal sprite literally took me a couple hours just because I kept looking for the right colur/shape but couldn't get it right and I just ended up going back to a previous design in the end)<br>
+        	    <br>
+        	  Known Bugs:<br>
+              be careful when messing around with debug features<br>
+              (eg. weapon swapping while moving around the weapon)<br>
+              <br>
+            Controls:<br>
+              <strong>W|A|S|D</strong> : movement<br>
+              <strong>left click</strong> : attack with your current weapon<br>
+              <strong>Z|X|C|V|B</strong> : use item 1|2|3|4|5<br>
+              <strong>Tab</strong> : open/close inventory<br>
+              <strong>Esc</strong> : open menu / cancel keybind change<br>
+              <strong>[DEBUG]</strong>:<br>
+              <strong>Space</strong> : summon insta kill weapon at mouse cursor<br>
+              <strong>-|=</strong> : zooming(not supposed to be necessary so will probably be removed)<br>
+              <strong>1</strong> : show/hide fps<br>
+              <strong>2</strong> : show/hide hitboxes<br>
+              <strong>3</strong> : toggle the enemies' AI<br>
+              <strong>4</strong> : toggle noclip mode<br>
+              <strong>5</strong> : toggle smooth animation for the inventory<br>
+              <strong>`</strong>(top-left of keyboard) : swap weapons (only way to get the long sword)<br>
+              <strong>0</strong> : toggle maximum FPS (100 <-> 1000)<br>
+              <strong>,|.</strong> : move the lowest (non-item) object left|right (not really very useful anymore)
+              <br><br><br><br>
+  	  </div>
+      <div class="menu">
+        <h2>Update #1</h2>
+        <a href="Roguelike ChangeLog.html"><h6>Full ChangeLog</h6></a>
+        	  <strong>Added:</strong><br>
+          	  A more efficient font system (along with a new font),<br>
+              Inventory labels to show what goes where,<br>
+              A new enemy (fireball shooting mage) (and a projectile system to go along with it),<br>
+              A stamina and mana system,<br>
+              A bar for health and smaller ones for stamina and mana,<br>
+              A permadeath system that completely resets the entire dungeon after you die,<br>
+              A portal that spawns after the 'boss' is killed, that takes you to the next dungeon<br>
+              <br>
+      	    <strong>Changed:</strong><br>
+        	    The default maximum FPS from 100 to 60 for a smoother experience<br>(better to have a low stable fps than a higher but jerky and stuttery one),<br>
+              The position of the armour display outside of the inventory,<br>
+              The cooldown of the items to better work with the stamina/mana system<br>
+        	    <br>
+      	    <strong>Removed:</strong><br>
+        	    Nothing<br>
+        	    <br>
+      	    <strong>Fixed:</strong><br>
+          	  The item dropping could sometimes put items in the wall in tight spaces<br>like corridors, that shouldn't happen any more<br>
+          	  <br>
+        	  <strong>To do:</strong><br>
+          	  Add more items,<br>
+          	  Actually make further dungeons increase in difficulty,<br>
+              Figure out how to make sprites in under an hour (the fire crystal sprite literally took me a couple hours just because I kept looking for the right colur/shape but couldn't get it right and I just ended up going back to a previous design in the end)<br>
+        	    <br>
+        	  <strong>Known Bugs:</strong><br>
+              None<br>
+              <br>
+            <strong>Controls:</strong><br>
+              <strong>W|A|S|D</strong> : movement<br>
+              <strong>left click</strong> : attack with your current weapon<br>
+              <strong>Z|X|C|V|B</strong> : use item 1|2|3|4|5<br>
+              <strong>Tab</strong> : open/close inventory<br>
+              <strong>Esc</strong> : open menu / cancel keybind change<br>
+              <strong>[DEBUG]</strong>:<br>
+              <strong>Space</strong> : summon insta kill weapon at mouse cursor<br>
+              <strong>-|=</strong> : zooming(not supposed to be necessary so will probably be removed)<br>
+              <strong>1</strong> : show/hide fps<br>
+              <strong>2</strong> : show/hide hitboxes<br>
+              <strong>3</strong> : toggle the enemies' AI<br>
+              <strong>4</strong> : toggle noclip mode<br>
+              <strong>5</strong> : toggle smooth animation for the inventory<br>
+              <strong>6</strong> : restore player health to max<br>
+              <strong>7</strong> : toggle smooth delta (smoothens the fps, only really affects higher max fps due to instability)<br>
+              <strong>`</strong>(top-left of keyboard) : swap weapons (only way to get the long sword)<br>
+              <strong>0</strong> : toggle maximum FPS (100 <-> 1000)<br>
+              <strong>,|.</strong> : move the lowest (non-item) object left|right (not really very useful anymore)
+              <br><br><br><br>
+  	  </div>
+-->
