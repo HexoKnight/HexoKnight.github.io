@@ -29,6 +29,23 @@ li a {
     text-decoration: none;
 }
 
+/* button {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    border-width: 0;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+button h1 {
+    margin: 0;
+} */
+
 /*scrollbar*/
 /* width */
 ::-webkit-scrollbar {
