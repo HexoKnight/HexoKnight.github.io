@@ -1,0 +1,51 @@
+html{
+    font-family: 'Raleway', sans-serif;
+    background-color: #2196F3;
+    font-size: 25px;
+}
+a {
+    color: blue;
+}
+ul {
+    background-color: #2196F3;
+    grid-template-columns: max-content;
+    grid-gap: 10px;
+    grid-row-gap: 20px;
+    list-style-type: none;
+    display: grid;
+    padding: 0;
+    justify-content: center;
+}
+li {
+    text-align: center;
+    grid-area: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+li a {
+    /* color: black;
+    text-align: center; */
+    text-decoration: none;
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cdcdcd; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a6a6a6; 
+}
