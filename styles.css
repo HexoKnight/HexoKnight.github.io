@@ -29,6 +29,13 @@ li a {
     text-decoration: none;
 }
 
+.compact a:not(:first-child) h3 {
+    margin-top: 0;
+}
+.compact a:not(:last-child) h3 {
+    margin-bottom: 0;
+}
+
 /* button {
     font-family: 'Raleway', sans-serif;
     background-color: rgba(255, 255, 255, 0.8);
